@@ -619,9 +619,9 @@ export default function PietrosBarber() {
 
   return (
     <div>
-      {page === 'landing' && <LandingPage />}
-      {page === 'register' && <RegisterPage />}
-      {page === 'barber' && <BarberPage />}
+      {page === 'landing' && LandingPage()}
+      {page === 'register' && RegisterPage()}
+      {page === 'barber' && BarberPage()}
     </div>
   );
 }
