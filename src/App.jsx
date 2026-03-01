@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Scissors, Star, Gift, Shield, Users, Clock, Award, CheckCircle, XCircle, Calendar, Settings } from 'lucide-react';
 
-const SUPABASE_URL = 'https://wnmehjlqlkawccshqbbq.supabase.co';
-const SUPABASE_KEY = 'sb_publishable_OM_DgvRiMktPg9zOeuxxkQ_SF8vCIOG';
+const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL || 'https://wnmehjlqlkawccshqbbq.supabase.co';
+const SUPABASE_KEY = import.meta.env.VITE_SUPABASE_KEY || 'sb_publishable_OM_DgvRiMktPg9zOeuxxkQ_SF8vCIOG';
 
 const supabase = {
   from: (table) => ({
